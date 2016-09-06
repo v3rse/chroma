@@ -53,5 +53,18 @@ __NB: getting more colors depends on your terminal type.__
 * `var sometext = chroma.red(chroma.underline("Hello Word"));`
 * `sometext` will contain "\x1b[31m\x1b[4mHello Word\x1b[24m\x1b[0m"
 
+To use, it copy it into your project and do:
+```javascript
+var chroma = require("./chroma.js");
+```
+
+
+## Test
+
+```bash
+node test.js
+```
+
 ## TODO
 - [ ] Make it work more like `chroma.underline.red("Hello Word");`
+- [ ] Make an npm module.
