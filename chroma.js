@@ -8,7 +8,7 @@ const formats = require("./formats");
 var colorFunctions = Object.keys(colours);
 var formatFunctions = Object.keys(formats);
 
-// Iterate over al format functions
+// Iterate over all format functions
 formatFunctions.forEach(function (formatFunction) {
 	// Create regular format functions
 	exports[formatFunction] = function (text) {

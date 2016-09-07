@@ -66,5 +66,5 @@ node test.js
 ```
 
 ## TODO
-- [ ] Make it work more like `chroma.underline.red("Hello Word");`
+- [x] Make it work more like `chroma.underline.red("Hello Word");`
 - [ ] Make an npm module.
