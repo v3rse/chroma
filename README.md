@@ -16,7 +16,7 @@ Yh I know there are other color packages....but this is just MINE!!
 ## Install
 
 ```
-npm install --save chroma
+npm install --save @v3rse/chroma
 ```
 ## Design and Usage
 
@@ -115,6 +115,6 @@ __NB: getting more colors depends on your terminal type.__
 
 
 ## TODO
-- [x] Make it work more like `chroma.underline.red("Hello Word");` (Thanks to @oddoye-david)
+- [x] Make it work more like `chroma.underline.red("Hello Word");` (Thanks to [@oddoye-david](https://github.com/oddoye-david) )
 - [x] Make an npm module.
 - [ ] Add background color feature.

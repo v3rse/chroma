@@ -1,5 +1,5 @@
 {
-  "name": "chroma",
+  "name": "@v3rse/chroma",
   "version": "1.0.0",
   "description": "Colors for your terminal app",
   "main": "chroma.js",
