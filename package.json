@@ -1,0 +1,35 @@
+{
+  "name": "chroma",
+  "version": "1.0.0",
+  "description": "Colors for your terminal app",
+  "main": "chroma.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v3rse/chroma.git"
+  },
+  "keywords": [
+    "terminal",
+    "command-line",
+    "text",
+    "xterm",
+    "tty",
+    "ansi",
+    "cli",
+    "colour",
+    "colors",
+    "formatting",
+    "format",
+    "vt100",
+    "styles",
+    "color"
+  ],
+  "contributors":["Nana Adane <nanaofosuheneadane@gmail.com> (http://www.nanaadane.com)","David Oddoye <oddoyeravid@gmail.com> ()"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v3rse/chroma/issues"
+  },
+  "homepage": "https://github.com/v3rse/chroma#readme"
+}

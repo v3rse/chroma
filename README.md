@@ -5,10 +5,74 @@ Chroma: Colors for your terminal app
 
 ![Screenshot](screenshot.png)
 
+### Why?
 I started writing more and more Node apps for the terminal and guess what? I liked them in color. So I decided I'd write a module to add colors to text for stuff that's printed to `stdout`
 
 
-Yh I know there's a colors package....but this is just MINE!! There's also another module for text formatting like underlining and boldening
+Yh I know there are other color packages....but this is just MINE!! 
+
+
+
+## Install
+
+```
+npm install --save chroma
+```
+## Design and Usage
+
+It can be used in the following ways:
+```
+chroma.<color>(string);
+chroma.<format>(string);
+chroma.<format>.<color>(string);
+```
+
+### Styles
+
+#### Colors
+
+* normal (default color)
+* black
+* red
+* blue
+* green
+* yellow
+* magenta
+* cyan
+* lgray (light gray)
+* dgray (dark gray)
+* lred
+* lblue
+* lgreen
+* lyellow
+* lmagenta
+* lcyan
+* white
+
+#### Formats
+
+* underline
+* bold
+* dim
+* italics(not supported on all terminal emulators)
+* strikethrough (not supported on all terminal emulators)
+
+
+
+To use, it copy it into your project and do:
+```javascript
+var chroma = require("./chroma.js");
+```
+
+## Test
+
+```bash
+node test.js
+```
+
+
+
+
 
 ## Some reading
 
@@ -49,22 +113,8 @@ __NB: getting more colors depends on your terminal type.__
 * Emphasis ("Italics") is `3m`
 * Dim is `2m`
 
-## Design and Usage
-* `var sometext = chroma.red(chroma.underline("Hello Word"));`
-* `sometext` will contain "\x1b[31m\x1b[4mHello Word\x1b[24m\x1b[0m"
-
-To use, it copy it into your project and do:
-```javascript
-var chroma = require("./chroma.js");
-```
-
-
-## Test
-
-```bash
-node test.js
-```
 
 ## TODO
-- [x] Make it work more like `chroma.underline.red("Hello Word");`
-- [ ] Make an npm module.
+- [x] Make it work more like `chroma.underline.red("Hello Word");` (Thanks to @oddoye-david)
+- [x] Make an npm module.
+- [ ] Add background color feature.
