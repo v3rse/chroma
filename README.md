@@ -24,7 +24,7 @@ It can be used in the following ways:
 ```
 chroma.<color>(string);
 chroma.<format>(string);
-chroma.<format>.<color>(string);
+chroma.<format>.<color|bgcolor>(string);
 ```
 
 ### Styles
@@ -49,6 +49,17 @@ chroma.<format>.<color>(string);
 * lcyan
 * white
 
+#### Background Colours
+
+* bgblack
+* bgred
+* bggreen
+* bgyellow
+* bgblue
+* bgmagenta
+* bgcyan
+* bgwhite
+
 #### Formats
 
 * underline
@@ -61,7 +72,7 @@ chroma.<format>.<color>(string);
 
 To use, it copy it into your project and do:
 ```javascript
-var chroma = require("./chroma.js");
+var chroma = require('@v3rse/chroma');
 ```
 
 ## Test
