@@ -61,7 +61,7 @@ chroma.<format>.<color>(string);
 
 To use, it copy it into your project and do:
 ```javascript
-var chroma = require("./chroma.js");
+var chroma = require('@v3rse/chroma');
 ```
 
 ## Test
