@@ -1,88 +1,36 @@
 const pre = "\x1b[";
-const reset = pre+"0m";
+const reset = pre + "0m";
 
-//basic foreground colors
-function normal(string){
-	return pre+"39m"+string+reset;
+const colours = {
+	normal: '39m',
+	black: '30m',
+	red: '31m',
+	green: '32m',
+	yellow: '33m',
+	blue: '34m',
+	magenta: '35m',
+	cyan: '36m',
+	lgray: '37m',
+	dgray: '90m',
+	lred: '91m',
+	lgreen: '92m',
+	lyellow: '93m',
+	lblue: '94m',
+	lmagenta: '95m',
+	lcyan: '96m',
+	white: '97m',
+	bgblack: '40m',
+	bgred: '41m',
+	bggreen: '42m',
+	bgyellow: '43m',
+	bgblue: '44m',
+	bgmagenta: '45m',
+	bgcyan: '46m',
+	bgwhite: '47'
 }
 
-function black(string){
-	return pre+"30m"+string+reset;
-}
-
-function red(string){
-	return pre+"31m"+string+reset;
-}
-
-function green(string){
-	return pre+"32m"+string+reset;
-}
-
-function yellow(string){
-	return pre+"33m"+string+reset;
-}
-
-function blue(string){
-	return pre+"34m"+string+reset;
-}
-
-function magenta(string){
-	return pre+"35m"+string+reset;
-}
-
-function cyan(string){
-	return pre+"36m"+string+reset;
-}
-
-function lgray(string){
-	return pre+"37m"+string+reset;
-}
-
-function dgray(string){
-	return pre+"90m"+string+reset;
-}
-
-function lred(string){
-	return pre+"91m"+string+reset;
-}
-
-function lgreen(string){
-	return pre+"92m"+string+reset;
-}
-
-function lyellow(string){
-	return pre+"93m"+string+reset;
-}
-
-function lblue(string){
-	return pre+"94m"+string+reset;
-}
-
-function lmagenta(string){
-	return pre+"95m"+string+reset;
-}
-function lcyan(string){
-	return pre+"96m"+string+reset;
-}
-
-function white(string){
-	return pre+"97m"+string+reset;
-}
-
-exports.normal = normal;
-exports.black = black;
-exports.red = red;
-exports.green = green;
-exports.yellow = yellow;
-exports.blue = blue;
-exports.magenta = magenta;
-exports.cyan = cyan;
-exports.lgray = lgray;
-exports.dgray = dgray;
-exports.lred = lred;
-exports.lgreen = lgreen;
-exports.lyellow = lyellow;
-exports.lblue = lblue;
-exports.lmagenta = lmagenta;
-exports.lcyan = lcyan;
-exports.white = white;
+Object.keys(colours).forEach(function (colour) {
+	exports[colour] = function normal(string) {
+		return pre + colours[colour] + string + reset;
+	}
+});
