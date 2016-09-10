@@ -24,7 +24,7 @@ It can be used in the following ways:
 ```
 chroma.<color>(string);
 chroma.<format>(string);
-chroma.<format>.<color>(string);
+chroma.<format>.<color|bgcolor>(string);
 ```
 
 ### Styles
@@ -48,6 +48,17 @@ chroma.<format>.<color>(string);
 * lmagenta
 * lcyan
 * white
+
+#### Background Colours
+
+* bgblack
+* bgred
+* bggreen
+* bgyellow
+* bgblue
+* bgmagenta
+* bgcyan
+* bgwhite
 
 #### Formats
 
