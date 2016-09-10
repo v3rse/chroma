@@ -128,4 +128,4 @@ __NB: getting more colors depends on your terminal type.__
 ## TODO
 - [x] Make it work more like `chroma.underline.red("Hello Word");` (Thanks to [@oddoye-david](https://github.com/oddoye-david) )
 - [x] Make an npm module.
-- [ ] Add background color feature.
+- [x] Add background color feature.(Thanks to [@oddoye-david](https://github.com/oddoye-david) )
