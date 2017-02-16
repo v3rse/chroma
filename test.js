@@ -1,4 +1,4 @@
-var chroma = require('./chroma.js');
+var chroma = require('./chroma.js')();
 
 
 console.log(chroma.bold(chroma.underline("Basic Colors:")));

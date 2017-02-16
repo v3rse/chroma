@@ -4,7 +4,8 @@
   "description": "Colors for your terminal app",
   "main": "chroma.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "log_test": "node test_log.js"
   },
   "repository": {
     "type": "git",
