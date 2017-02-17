@@ -20,11 +20,27 @@ npm install --save @v3rse/chroma
 ```
 ## Design and Usage
 
+To use, it copy it into your project and do:
+```javascript
+var chroma = require('@v3rse/chroma'); // use chroma
+
+// or
+
+require('@v3rse/chroma')({ bindToCosole: true }); // bind chroma functionality to console.log directly
+```
+
 It can be used in the following ways:
 ```
 chroma.<color>(string);
 chroma.<format>(string);
 chroma.<format>.<color|bgcolor>(string);
+
+// or with { bindToCosole: true }
+
+console.log.<color>(string);
+console.log.<format>(string);
+console.log.<format>.<color|bgcolor>(string);
+console.log.<format>.<format>.<color|bgcolor>(string);
 ```
 
 ### Styles
@@ -67,13 +83,6 @@ chroma.<format>.<color|bgcolor>(string);
 * dim
 * italics(not supported on all terminal emulators)
 * strikethrough (not supported on all terminal emulators)
-
-
-
-To use, it copy it into your project and do:
-```javascript
-var chroma = require('@v3rse/chroma');
-```
 
 ## Test
 
